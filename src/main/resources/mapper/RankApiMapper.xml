@@ -1,0 +1,15 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace=" com.hongura.rank.domain.RankApiMapper">
+
+    <select id="getRankList" resultType="com.hongura.rank.domain.RankApi">
+        <![CDATA[
+
+			SELECT daumin_id as loginid FROM user
+            WHERE last_login_date = (CURDATE()-INTERVAL 26 DAY);
+
+        ]]>
+    </select>
+</mapper>

@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+hongura_map.iml
+mvnw
+mvnw.cmd
+/.idea
+/.mvn
+/target
